@@ -1,12 +1,21 @@
 #from code.calculator import diffOfTwoNos, productOfTwoNos, sumOfTwoNos
 import sys
-sys.path.insert(1, '../code')
+sys.path.insert(1, 'code')
 import calculator
 
 import unittest
 
 
 class TestCalculator(unittest.TestCase):
+    def testDivisionOfTwoNos(self):
+        """
+        Test divisionOfTwoNos works
+        """
+        a = 2
+        b = 4
+        result = calculator.divisionOfTwoNos(a,b)
+        self.assertEqual(result, 0.5)
+
     def testSumOfTwoNos(self):
         """
         Test sumOfTwoNos works
