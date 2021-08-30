@@ -5,7 +5,7 @@ import calculator
 
 import unittest
 
-#Calculator class
+#Calculator
 
 class TestCalculator(unittest.TestCase):
     def testDivisionOfTwoNos(self):
